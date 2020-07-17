@@ -1,0 +1,13 @@
+bash-completion
+brew-cask
+direnv
+git
+htop-osx
+latex-mk
+mysql
+node
+nvm
+postgresql
+redis
+ruby
+z

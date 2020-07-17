@@ -1,0 +1,69 @@
+[user]
+  email = jeffrey.kwan@zenpayroll.com
+  name = Jeffrey Kwan
+[push]
+  default = current
+[fetch]
+  prune = true
+[color]
+  ui = true
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[branch]
+  autosetuprebase = always
+[alias]
+  a = add
+  au = add -u
+  b = branch
+  bd = branch -D
+  bda = "!git b | grep -v "development" | xargs git bd"
+  bdr = "!git b -vv | grep ': gone]' | awk '{print $1}' | xargs git bd"
+  br = branch -m
+  c = commit
+  ca = commit --amend
+  co = checkout
+  cob = checkout -b
+  cod = checkout development
+  com = checkout master
+  d = diff
+  dn = diff --name-only
+  f = fetch -p
+  l = log
+  lf = log --follow --
+  ll = log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(blue)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  lp = log -p
+  ls = log --stat
+  m = merge -s recurisve -X patience
+  md = merge origin/development
+  p = pull
+  pr = pull-request
+  pu = push
+  ra = rebase --abort
+  rc = rebase --continue
+  rh = reset HEAD
+  rh1 = reset HEAD~1
+  ri = rebase -i
+  rid = rebase -i origin/development
+  rim = rebase -i origin/master
+  rp = remote prune origin
+  rs = restore --staged
+  sa = "!f() { git stash apply stash@{$1}; }; f"
+  sd = "!f() { git stash drop stash@{$1}; }; f"
+  sl = stash list
+  sp = stash pop
+  ss = "!f() { git stash show -p stash@{$1}; }; f"
+  st = status
+[core]
+  editor = /usr/bin/vim
+[gc]
+	pruneExpire = 1.week.ago
+[gui]
+	diffopts = -w
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+
