@@ -58,12 +58,13 @@
 [core]
   editor = /usr/bin/vim
 [gc]
-	pruneExpire = 1.week.ago
+  pruneExpire = 1.week.ago
 [gui]
-	diffopts = -w
+  diffopts = -w
 [filter "lfs"]
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-
+  process = git-lfs filter-process
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+[pager]
+  branch = false
