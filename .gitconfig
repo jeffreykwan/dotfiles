@@ -37,7 +37,7 @@
   ls = log --stat
   m = merge -s recurisve -X patience
   md = merge origin/development
-  p = pull
+  p = pull -u
   pr = pull-request
   pu = push
   ra = rebase --abort
