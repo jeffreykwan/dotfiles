@@ -37,8 +37,9 @@
   ls = log --stat
   m = merge -s recurisve -X patience
   md = merge origin/development
+  mm = merge origin/master
   p = pull -u
-  pr = pull-request
+  pr = "!git pu && gh pr create --fill"
   pu = push
   ra = rebase --abort
   rc = rebase --continue
