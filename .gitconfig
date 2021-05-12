@@ -58,6 +58,7 @@
   st = status
 [core]
   editor = /usr/bin/vim
+  pager = less -F -X
 [gc]
   pruneExpire = 1.week.ago
 [gui]
@@ -67,5 +68,3 @@
   required = true
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
-[pager]
-  branch = false
