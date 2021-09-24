@@ -1,3 +1,9 @@
+" activates filetype detection
+filetype plugin indent on
+
+" activates syntax highlighting
+syntax on
+
 set number
 set ruler
 set expandtab "Tabs->Spaces
@@ -7,7 +13,7 @@ set viminfo='20,\"50,%
 set history=500
 set nowrap
 set incsearch
-set backspace=2
+set backspace=indent,eol,start
 set showmatch "Highlights matching brackets
 set smartindent
 set smarttab
