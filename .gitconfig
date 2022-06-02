@@ -40,7 +40,7 @@
   mm = merge origin/master
   p = pull -u
   pr = "!git pu && gh pr create --fill"
-  pu = push
+  pu = push --set-upstream
   ra = rebase --abort
   rc = rebase --continue
   rh = reset HEAD
