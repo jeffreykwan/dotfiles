@@ -29,6 +29,7 @@
   com = checkout master
   d = diff
   dn = diff --name-only
+  ds = diff --stat
   f = fetch -p
   l = log
   lf = log --follow --
