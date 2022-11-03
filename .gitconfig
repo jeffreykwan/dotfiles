@@ -46,6 +46,7 @@
   rc = rebase --continue
   rh = reset HEAD
   rh1 = reset HEAD~1
+  rhn = "!f() { git reset HEAD~$1; }; f"
   ri = rebase -i
   rid = rebase -i origin/development
   rim = rebase -i origin/master
