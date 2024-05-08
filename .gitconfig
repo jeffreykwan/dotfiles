@@ -5,6 +5,7 @@
   default = current
 [fetch]
   prune = true
+  pruneTags = true
 [color]
   ui = true
 [color "branch"]
